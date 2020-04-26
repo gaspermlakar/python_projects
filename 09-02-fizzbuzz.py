@@ -1,12 +1,12 @@
 print("Hello, welcome to the FizzBuzz game ;)")
-number = int(input("Select a number betwen 1 and 100: "))
+upper_count_limit = int(input("Select a number betwen 1 and 100: "))
 
-for number in range(1, number+1):
-    if number % 3 == 0 and number % 5 == 0:
+for current_count in range(1, upper_count_limit+1):
+    if current_count % 3 == 0 and current_count % 5 == 0:
         print("fizzbuzz")
-    elif number % 3 == 0:
+    elif current_count % 3 == 0:
         print("fizz")
-    elif number % 5 == 0:
+    elif current_count % 5 == 0:
         print("buzz")
     else:
-        print(number)
+        print(current_count)
