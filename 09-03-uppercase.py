@@ -1,6 +1,6 @@
 print("Hello!")
 
-name = input("What's your name: ")
+first_name = input("What's your name: ")
 last_name = input("And what's your last name: ")
 
-print(f"{name.upper()} {last_name.upper()} it's nice to meet you.")
+print(f"{first_name.upper()} {last_name.upper()} it's nice to meet you.")
