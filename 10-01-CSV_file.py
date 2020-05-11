@@ -1,6 +1,6 @@
 import csv
 
 with open('10-01-CSV_file.csv') as data_file:
-    reader = csv.DictReader(data_file)
-    for row in reader:
-        print(row['Name'], "is", row['Gender'], "and", row['Age'], "years old.")
+    people_list = csv.DictReader(data_file)
+    for people_info in people_list:
+        print(people_info['Name'], "is", people_info['Gender'], "and", people_info['Age'], "years old.")
